@@ -11,15 +11,15 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-// var firebaseConfig = {
-//   apiKey: "AIzaSyAljT9NeVJoBqe9cNnVJGW86b49Fhe7ejI",
-//   authDomain: "data-c2f9c.firebaseapp.com",
-//   databaseURL: "https://data-c2f9c.firebaseio.com",
-//   projectId: "data-c2f9c",
-//   storageBucket: "data-c2f9c.appspot.com",
-//   messagingSenderId: "706767781996",
-//   appId: "1:706767781996:web:f66f84fd4775592c135849",
-//   measurementId: "G-ES9NZ74P0W"
+// var firebaseConfig2 = {
+//     apiKey: "AIzaSyDwNThDrEs26ZqcQZbRnZ3JN4SY1YlX_04",
+//     authDomain: "covibot-2a63d.firebaseapp.com",
+//     databaseURL: "https://covibot-2a63d-default-rtdb.firebaseio.com",
+//     projectId: "covibot-2a63d",
+//     storageBucket: "covibot-2a63d.appspot.com",
+//     messagingSenderId: "867521166996",
+//     appId: "1:867521166996:web:5149d3d8b43f71e3413e81",
+//     measurementId: "G-03WDSND0V7"
 // };
 // // Initialize Firebase
 // firebase.initializeApp(firebaseConfig);
@@ -97,6 +97,20 @@ firebase.initializeApp(firebaseConfig);
       address:address
     });
 
+  //  firebasenew.initializeApp(firebaseConfig2);
+  
+  // Reference messages collection
+  var messagesReftweets = firebase.database().ref('tweets');
+
+    var msg="Urgent need of "+bloodGroup+" plasma for"+" Patient's Name "+name +" "+sex+"'"+age+" "+" at "+address+" "+district+" "+" "+state+" Contant :"+phone +" "+email+" @CovidPlasmaIn @BloodDonorsIn @TeamSOSIndia @NeedCovidPlasma #COVIDSecondWave #CovidHelpOnline"
+   
+    datatweet={
+      message:msg,
+      type:"plasma request",
+      tweetstatus:"0"
+    }
+    messagesReftweets.push(datatweet)
+
     results() ;
     // patient_mail_sending(name,age,sex,bloodGroup,state,district,email, phone,address);
   }
@@ -104,7 +118,7 @@ firebase.initializeApp(firebaseConfig);
 
 //  function evaluating the results   
 
-   function results() {
+function results() {
 
   console.log("result function called");
   var database=firebase.database();
@@ -242,5 +256,5 @@ function volunter_alerts_mails_sending(name,age,sex,bloodGroup,state,district,em
 }   
 
 function done(){
-  document.getElementById("mailing_confirmation_id").innerHTML="Your request to send alerts has been done";
+  document.getElementById("mailing_confirmation_id").innerHTML="Your request to send alerts has been done, <br> also your request tweet would be posted in our twitter handle needcovidplasma within few minutes tagging some other plasma working handles, check the tweet once a while. We pray for you and your family to be safe and recover fast";
 }
