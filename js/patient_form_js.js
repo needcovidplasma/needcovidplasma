@@ -102,7 +102,7 @@ firebase.initializeApp(firebaseConfig);
   // Reference messages collection
   var messagesReftweets = firebase.database().ref('tweets');
 
-    var msg= "@CovidPlasmaIn @BloodDonorsIn Urgent need of "+bloodGroup+" plasma for"+" Patient's Name "+name +" "+sex+"'"+age+" "+" at "+" "+district+","+state+" Contant: "+phone +" "+email+" at "+address
+    var msg= "@BloodAid @BloodDonorsIn Urgent need of "+bloodGroup+" plasma for"+" Patient's Name "+name +" "+sex+"'"+age+" "+" at "+" "+district+","+state+" Contant: "+phone +" "+email+" at "+address
    
     datatweet={
       message:msg,
