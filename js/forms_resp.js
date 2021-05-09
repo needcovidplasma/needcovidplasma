@@ -43,30 +43,3 @@ toggleBtn.addEventListener('click',()=>{
 //     return document.getElementById(id).value;
 //   }
   
-//   // Save message to firebase
-//   function saveMessage(name, email, phone, message){
-//     var contactform_msg=name +" "+ phone +" " + email +" "+ message;
-//     console.log(contactform_msg);
-//     mailkaro(contactform_msg);
-//   }
-
-// const sm="notifications.needcovidplasma@gmail.com";
-// const rm="ram04032000@gmail.com";
-// const pw="AntiCovid@1";
-
-//   function mailkaro(contactform_msg) {
-//     console.log("mailing"); 
-//     Email.send({ 
-//       Host: "smtp.gmail.com", 
-//       Username: sm, 
-//       Password: pw, 
-//       To: rm, 
-//       From: sm, 
-//       Subject: "Contact Form message @NeedCovidPlasma.in", 
-//       Body: contactform_msg, 
-//     }) 
-//       .then(function (message) { 
-//           console.log("mail sent successfully"); 
-//       }); 
-//   } 
-
