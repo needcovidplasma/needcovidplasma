@@ -88,7 +88,7 @@ firebase.initializeApp(firebaseConfig);
 
   }
 
-  const sm="notifications.needcovidplasma@gmail.com";
+  const sm="plasmaneed@gmail.com";
   const volunteer_mail_message="</b>,you have been succesfully registered as a volunteer in NeedCovidPlasma.in<br><br>Thank you for being part of our mission.<br><br>If you have any queries,you can reply back to this mail.<br><br>Stay home ! stay safe !<br><br>needcovidplasma.in</p>";
   const pw="covidplasma1";
   
