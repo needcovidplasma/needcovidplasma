@@ -88,7 +88,7 @@ firebase.initializeApp(firebaseConfig);
     donor_mail_sending(name,age,sex,bloodGroup,state,district,email, phone,address);
   }
 
-  const sm="notifications.needcovidplasma@gmail.com";
+  const sm="plasmaneed@gmail.com";
   const Donor_mail_message="</b>,you have been succesfully registered as a donor in NeedCovidPlasma.in<br><br>Thank you for being part of our mission.<br><br>If you have any queries,you can reply back to this mail.<br><br>Stay home ! stay safe !<br><br>needcovidplasma.in</p>";
   const pw="covidplasma1";
   
