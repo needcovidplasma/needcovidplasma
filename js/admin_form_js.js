@@ -225,7 +225,7 @@ function send_mails_to_volunteers_sub(){
 }
    
 
-const sm="notifications.needcovidplasma@gmail.com";
+const sm="plasmaneed@gmail.com";
 const volunteer_alert_mail_message="Need of plasma from recovered corona people has been requested for the following person";
 const end_volunteer_message="<br>Please circulate the above details in your known groups or social media pages thereby increasing the chance finding a donor<br>Please don't reply back to this mail<br><br>needcovidplasma.in";
 const pw="covidplasma1";
